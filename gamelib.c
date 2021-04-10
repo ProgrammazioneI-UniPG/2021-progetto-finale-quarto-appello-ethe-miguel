@@ -242,7 +242,7 @@ static void imposta_giocatori()
     {
       if (numero_giocatori == 4 && impostori <= 1)
       {
-        if ((rand() % 100 <= 25) && (impostori < 1))
+        if ((rand() % 100 <= 40) && (impostori < 1))
         {
           Giocatori[i].stato = impostore;
           impostori++;
@@ -252,7 +252,7 @@ static void imposta_giocatori()
       }
       if (numero_giocatori > 4 && numero_giocatori <= 6 && impostori < 2)
       {
-        if (rand() % 100 <= 25)
+        if (rand() % 100 <= 35)
         {
           Giocatori[i].stato = impostore;
           impostori++;
@@ -262,7 +262,7 @@ static void imposta_giocatori()
       }
       if (numero_giocatori > 6 && numero_giocatori <= 8 && impostori < 3)
       {
-        if (rand() % 100 <= 50)
+        if (rand() % 100 <= 30)
         {
           Giocatori[i].stato = impostore;
           impostori++;
@@ -272,7 +272,7 @@ static void imposta_giocatori()
       }
       if (numero_giocatori > 8 && impostori < 3)
       {
-        if (rand() % 100 <= 75)
+        if (rand() % 100 <= 25)
         {
           Giocatori[i].stato = impostore;
           impostori++;
